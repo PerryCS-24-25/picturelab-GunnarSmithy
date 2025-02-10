@@ -12,7 +12,10 @@ public class PictureTester {
      */
     public static void testExplorer() {
         Picture beach = new Picture("beach.jpg");
-        beach.explore();   
+        beach.explore(); 
+        Picture myPic = new Picture("Craig.jpg");
+        Picture smallP = myPic.scale(0.50,0.50);
+        smallP.write("smallCraig.jpg");   
     }
 
     /**
