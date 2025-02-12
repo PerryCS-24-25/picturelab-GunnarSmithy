@@ -125,6 +125,34 @@ public class Picture extends SimplePicture {
             }
         }
     }
+    public void keepOnlyBlue() {
+        Pixel[][] pixels = this.getPixels2D();
+        for (Pixel[] rowArray : pixels) {
+            for (Pixel pixelObj : rowArray) {
+                pixelObj.setRed(0);
+                pixelObj.setGreen(0);
+            }
+        }
+    }
+    public void keepOnlyRed() {
+        Pixel[][] pixels = this.getPixels2D();
+        for (Pixel[] rowArray : pixels) {
+            for (Pixel pixelObj : rowArray) {
+                pixelObj.setBlue(0);
+                pixelObj.setGreen(0);
+            }
+        }
+    }
+    public void keepOnlyGreen() {
+        Pixel[][] pixels = this.getPixels2D();
+        for (Pixel[] rowArray : pixels) {
+            for (Pixel pixelObj : rowArray) {
+                pixelObj.setRed(0);
+                pixelObj.setBlue(0);
+            }
+        }
+    }
+
 
     /**
      * Removes all the red from this image.

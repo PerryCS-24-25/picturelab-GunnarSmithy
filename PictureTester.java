@@ -67,6 +67,22 @@ public class PictureTester {
         temple2.explore();
     }
 
+    public static void testKeepOnlyBlue() {
+        Picture blueKarl = new Picture("blue-karl.jpg");
+        blueKarl.keepOnlyBlue();
+        blueKarl.explore();
+    }
+    public static void testKeepOnlyGreen() {
+        Picture blueKarl = new Picture("blue-karl.jpg");
+        blueKarl.keepOnlyGreen();
+        blueKarl.explore();
+    }
+    public static void testKeepOnlyRed() {
+        Picture blueKarl = new Picture("blue-karl.jpg");
+        blueKarl.keepOnlyRed();
+        blueKarl.explore();
+    }
+
     /**
      * Main method for testing. Every class can have a main method in Java
      */
@@ -75,7 +91,7 @@ public class PictureTester {
         // and comment out the ones you don't want
         // to run
 
-        testExplorer();
+        //testExplorer();
         //testScale();
         //testZeroBlue();
         //testKeepOnlyBlue();
