@@ -166,7 +166,7 @@ public class Picture extends SimplePicture {
             }
     }
 }
-public void grayscale(){
+public void grayscale() {
     Pixel[][] pixels = this.getPixels2D();
     for (Pixel[] rowArray : pixels)
     {

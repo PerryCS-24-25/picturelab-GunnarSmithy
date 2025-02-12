@@ -92,6 +92,11 @@ public class PictureTester {
         blueKarl.grayscale();
         blueKarl.explore();
     }
+    public static void testFixUnderwater() {
+        Picture water = new Picture("water.jpg");
+        water.fixUnderwater();
+        water.explore();
+    }
 
     /**
      * Main method for testing. Every class can have a main method in Java
@@ -109,7 +114,7 @@ public class PictureTester {
         //testKeepOnlyGreen();
         //testNegate();
         //testGrayscale();
-        //testFixUnderwater();
+        testFixUnderwater();
         //testMirrorVertical();
         //testMirrorTemple();
         //testMirrorArms();
