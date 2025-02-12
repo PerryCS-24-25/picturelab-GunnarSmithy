@@ -87,6 +87,11 @@ public class PictureTester {
         blueKarl.negate();
         blueKarl.explore();
     }
+    public static void testGrayscale() {
+        Picture blueKarl = new Picture("blue-karl.jpg");
+        blueKarl.grayscale();
+        blueKarl.explore();
+    }
 
     /**
      * Main method for testing. Every class can have a main method in Java
