@@ -82,6 +82,11 @@ public class PictureTester {
         blueKarl.keepOnlyRed();
         blueKarl.explore();
     }
+    public static void testNegate() {
+        Picture blueKarl = new Picture("blue-karl.jpg");
+        blueKarl.negate();
+        blueKarl.explore();
+    }
 
     /**
      * Main method for testing. Every class can have a main method in Java
